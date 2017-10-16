@@ -3,67 +3,79 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Catherine Liu's Portfolio</title>
+	<title>Catherine Liu | Full Stack Web Developer</title>
 
+	<!-- RESET CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- GOOGLE FONT: Lato -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<!-- BOOTSTRAP CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css
+	/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- FONT AWESOME CSS -->
+	<script src="https://use.fontawesome.com/3aadef3e53.js"></script>
+	<!-- CUSTOM CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
 </head>
 <body>
-	
-	<header class="clearfix">
-		
-		<div id="main-logo">
-			<h1>Catherine Liu</h1>
-		</div>
+	<div class="container-fluid" id="main">
+		<!-- NAV -->
+		<nav class="nav navbar navbar-expand-lg navbar-dark">
+		  <a class="navbar-brand" href="/"><h1 class="display-4">Catherine Liu</h1></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
 
-		<nav>
-			<ul>
-				<li><a href="index.html" >About</a></li>
-				<li><a href="portfolio.html" >Portfolio</a></li>
-				<li><a href="contact.html" >Contact</a></li>
-			</ul>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="justify-content-end navbar-nav ml-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link h3" href="index.html">About <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link h3" href="portfolio.html">Portfolio</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link h3" href="contact.html">Contact</a>
+		      </li>
+		    </ul>
+		  </div>
 		</nav>
 
-	</header>
-
-	<div class="container clearfix">
+	<!-- CONTENT -->
 	
-		<section id="bio" class="main-content">
+		<section id="bio" class="main-content col-md-8 clearfix">
 
 			<h1>About Me</h1>
 			<hr>
 			<img src="assets/images/bio.jpg" alt="Catherine Liu" id="bio-image">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec pulvinar tellus. Pellentesque placerat vel risus iaculis vulputate. Ut velit nulla, facilisis et tortor sed, convallis tincidunt tellus. Mauris arcu risus, tincidunt eget fermentum venenatis, pretium commodo sapien. Maecenas scelerisque mauris sit amet blandit sodales. Mauris velit lectus, venenatis id enim a, vestibulum tristique nisl. Nam cursus nulla eleifend augue ornare, sit amet suscipit metus hendrerit. Suspendisse potenti. Curabitur id lectus aliquet urna suscipit posuere. Vestibulum sagittis dictum ultrices. Pellentesque malesuada molestie risus. Fusce congue est ligula, ac tristique dolor rhoncus quis. Morbi quam velit, imperdiet eu elementum nec, ornare sit amet mi.
+			<p class="h1">
+				Hi! I'm Catherine.
+			</p>
+			<br />
+			<p>I am a programmer and problem solver, ready to overcome any challenges thrown my way. I can build a responsive front end with full database back end from conception to production. I pick up new languages and technologies quickly, and I'm always eager to learn more. I am well-versed in JavaScript, HTML, CSS, SQL, and Java.
 			</p>
 
-			<p>Pellentesque facilisis risus erat. Duis a malesuada elit. Quisque eleifend metus nisl, a pellentesque enim volutpat vitae. Nunc tincidunt ante a nibh viverra viverra. Pellentesque faucibus massa tellus, vel aliquam erat vulputate vitae. Proin vel bibendum quam, ac imperdiet quam. Phasellus pretium convallis commodo. Donec bibendum arcu sem, in ullamcorper odio semper at. Maecenas aliquet ligula quis metus luctus placerat. Quisque eros est, lobortis id consectetur ut, condimentum a neque. Praesent at condimentum magna. Suspendisse sit amet feugiat arcu. Aliquam interdum ex vel orci placerat rhoncus. Maecenas suscipit orci et diam fringilla, ac elementum dolor vehicula. Suspendisse vulputate nec mauris non mattis. Nulla facilisi.</p>
-
-			<p>Curabitur posuere libero eget lorem cursus, in interdum leo molestie. Pellentesque ac orci elit. Pellentesque in feugiat nisi. In hac habitasse platea dictumst. Cras sit amet elementum dui. Duis nunc felis, auctor id auctor vitae, posuere sit amet dui. Nulla ac eros pulvinar est semper pretium. Integer euismod augue a ultrices consectetur. Nunc porttitor risus eget malesuada euismod. Donec pretium libero nec vehicula ultrices. Phasellus quis enim rhoncus, molestie nisl nec, commodo enim. Donec eu lacus ornare, tempus velit ac, mattis diam.<p>
-
 		</section>
 
-		<section id="connect">
-			
-			<h3>Connect with Me</h3>
-			<hr>
-
+		<footer class="text-center">
+			Connect with Me!<br />
 			<div id="connect-links">
-				<a href="https://github.com/cqliu1" id="github-link"><img src="assets/images/github.png" class="connect-icon" alt="GitHub"></a>
-				<a href="https://www.linkedin.com/in/catherineqliu/" id="linkedin-link"><img src="assets/images/linkedin.png" class="connect-icon" alt="LinkedIn"></a>
-				<a href="" id="stackoverflow-link"><img src="assets/images/stackoverflow.png" class="connect-icon" alt="Stack Overflow"></a>
+				<a href="https://github.com/cqliu1" id="github-link">
+					<i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/catherineqliu/" id="linkedin-link">
+					<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+				</a>
 			</div>
-
-
-		</section>
-
+		</footer>
 	</div>
-
-
-	<footer>
-		
-		&copy; Copyright 2016 Catherine Liu
-
-	</footer>
-
+	
+	<!-- SCRIPTS -->
+	<!-- JQUERY -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!-- BOOTSTRAP JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
 </html>

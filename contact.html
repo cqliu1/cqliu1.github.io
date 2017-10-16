@@ -3,69 +3,122 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Catherine Liu's Portfolio</title>
+	<title>Catherine Liu | Full Stack Web Developer</title>
 
+	<!-- RESET CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- GOOGLE FONT: Lato -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<!-- BOOTSTRAP CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css
+	/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- FONT AWESOME CSS -->
+	<script src="https://use.fontawesome.com/3aadef3e53.js"></script>
+	<!-- CUSTOM CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
 </head>
 <body>
-	
-	<header class="clearfix">
+	<div class="container-fluid" id="main">
+		<!-- NAV -->
+		<nav class="nav navbar navbar-expand-lg navbar-dark">
+		  <a class="navbar-brand" href="/"><h1 class="display-4">Catherine Liu</h1></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
 
-		<div id="main-logo">
-			<h1>Catherine Liu</h1>
-		</div>
-
-		<nav>
-			<ul>
-				<li><a href="index.html" >About</a></li>
-				<li><a href="portfolio.html" >Portfolio</a></li>
-				<li><a href="contact.html" >Contact</a></li>
-			</ul>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="justify-content-end navbar-nav ml-auto">
+		      <li class="nav-item">
+		        <a class="nav-link h3" href="index.html">About <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link h3" href="portfolio.html">Portfolio</a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link h3" href="contact.html">Contact</a>
+		      </li>
+		    </ul>
+		  </div>
 		</nav>
 
-	</header>
-
-	<div class="container clearfix">
+		<!-- CONTENT -->
 	
-		<section id="contact" class="main-content">
+		<section id="contact" class="main-content col-md-8 clearfix">
 
-			<h1>Contact</h1>
+			<h1>Contact Me</h1>
 			<hr>
-			<form id="contact-form">
-				Name<br>
-				<input type="text" placeholder="John Smith" id="contact-name"><br>
-				Email<br>
-				<input type="text" placeholder="example@gmail.com" id="contact-email"><br>
-				Message<br>
-				<textarea id="contact-message" rows="10"></textarea>
-				<button type="submit" form="contact-form" value="Submit">Submit</button>
+			<form id="contactform">
+				<div class="input-group input-group-lg">
+				  <span class="input-group-addon" id="sizing-addon1">Name</span>
+				  <input id="contact-name" type="text" class="form-control" name="from_name" aria-label="Name" required aria-describedby="sizing-addon1">
+				</div>
+				<br />
+				<div class="input-group input-group-lg">
+				  <span class="input-group-addon" id="sizing-addon1">Email</span>
+				  <input id="contact-email" type="text" class="form-control" name="email" aria-label="Email" required aria-describedby="sizing-addon1">
+				</div>
+				<br />
+				<div class="input-group input-group-lg">
+				  <textarea id="contact-message" name="message" class="rounded col-md-12" required placeholder="Enter your message here." rows="10"></textarea>
+				</div>
+				<br />
+				<button id="contact-submit" class="btn btn-lg btn-secondary" type="submit" form="contact-form">Send</button>
 			</form>
 
 		</section>
 
-		<section id="connect">
-			
-			<h3>Connect with Me</h3>
-			<hr>
-
+		<footer class="text-center">
+			Connect with Me!<br />
 			<div id="connect-links">
-				<a href="https://github.com/cqliu1" id="github-link"><img src="assets/images/github.png" class="connect-icon" alt="GitHub"></a>
-				<a href="https://www.linkedin.com/in/catherineqliu/" id="linkedin-link"><img src="assets/images/linkedin.png" class="connect-icon" alt="LinkedIn"></a>
-				<a href="" id="stackoverflow-link"><img src="assets/images/stackoverflow.png" class="connect-icon" alt="Stack Overflow"></a>
+				<a href="https://github.com/cqliu1" id="github-link">
+					<i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/catherineqliu/" id="linkedin-link">
+					<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+				</a><a href="mailto:catherineqliu@outlook.com" id="email-link">
+					<i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i>
+				</a>
 			</div>
-
-
-		</section>
-
+		</footer>
 	</div>
+	
+	<!-- SCRIPTS -->
+	<!-- JQUERY -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!-- BOOTSTRAP JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<!-- EMAILJS -->
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<!-- CUSTOM JS -->
+	<script type="text/javascript">
+		(function(){
+      emailjs.init("user_l3ctCxai8KJQIyIoR5cWb");
+    })();
 
+		$(document).ready(function() {
+			var contactform = $("#contactform");
 
-	<footer>
-		
-		&copy; Copyright 2016 Catherine Liu
+			$("#contact-submit").on("click", function(event) {
+				event.preventDefault();
+				console.log("lkjlkjlkjlkjlkjlkjlkj");
+			  // Change to your service ID, or keep using the default service
+			  var service_id = "outlook";
+			  var template_id = "contact_form";
 
-	</footer>
-
+			  contactform.find("#contact-submit").text("Sending...");
+			  emailjs.sendForm(service_id,template_id,"contactform")
+			  	.then(function(){ 
+			    	alert("Sent!");
+			       contactform.find("#contact-submit").text("Send");
+			    }, function(err) {
+			       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+			       contactform.find("#contact-submit").text("Send");
+			    });
+			  return false;
+			});
+		});
+	</script>
 </body>
 </html>
